@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Illuminarty</title>
+		<style>
+		p#text {
+		font-family: verdana;
+		font-size: 25px;
+		color: white;
+		}
+		
+		body {
+		background-color: #002800; 
+		}
+		
+		img#illuminarty {
+		height: 220px;
+		}
+		</style>
+	</head>
+	<body>
+	<center>
+	<img src="iluminarty.png" alt="iluminarty" id="illuminarty" onClick="iluminarty()">
+	<p id="text"> Press For X-Files </p>
+	</center>
+		<script>
+		var sound = new Audio();
+		sound.src = "X-Files.mp3";
+		
+		function iluminarty() {
+		sound.play()
+		}
+		</script>
+	</body>
+</html>
